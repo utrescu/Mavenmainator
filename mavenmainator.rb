@@ -166,7 +166,7 @@ end
 # 1. Obtenir les dades dels paràmetres
 options = {}
 opt_parser = OptionParser.new do |opts|
-  opts.banner = "Usage: mainmavenator.rb [options]"
+  opts.banner = "Usage: mavenmainator.rb [options]"
 
   opts.on('-m', '--mainpath PATH', 'required main') {
     |v| options[:main_path] = v }
@@ -219,5 +219,5 @@ if !comprovaSiEstaConfigurat(@doc)
   File.open(OUTPOM, 'w') { |f| f.print(@doc.to_xml(indent:2, indent_text:" ")) }
 
 else
-  puts "Ja està configurat"
+  puts "Already configured"
 end
