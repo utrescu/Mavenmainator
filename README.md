@@ -1,6 +1,6 @@
 Mavenmainator
 ==========================
-En el temps que porto fent de professor de Java deixo que els alumnes facin servir el IDE que vulguin (Eclipse, IntelliJ IDEA, Netbeans, ...). Això era un problema a l'hora de corregir perquè he de crear projectes nous, cercar les llibreries, etc ... 
+En el temps que porto fent de professor de Java deixo que els alumnes facin servir el IDE que vulguin (Eclipse, IntelliJ IDEA, Netbeans, ...). Això era un problema a l'hora de corregir perquè he de crear projectes nous, cercar les llibreries, etc ...
 
 Per aconseguir independència de l'IDE (quest motiu els demano que m'entreguin projectes en Maven (http://maven.apache.org/)
 
@@ -45,7 +45,7 @@ Es pot obtenir ajuda amb el paràmetre -h:
         -m, --mainpath PATH              required main
         -i, --input POM                  Source host, default pom.xml
         -o, --output POM                 Source port, default new_pom.xml
-        -s, --shade                      Fer servir el plugin shade
+        -s, --shade                      Configure maven-shade-plugin to package in a uber-jar
         -h, --help                       Prints this help
 
 ### maven-jar-plugin

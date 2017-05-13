@@ -174,7 +174,7 @@ opt_parser = OptionParser.new do |opts|
     |v| options[:input_pom] = v }
   opts.on('-o', '--output POM', 'Source port, default new_pom.xml') {
     |v| options[:output_pom] = v }
-  opts.on('-s', '--shade', 'Fer servir el plugin shade') {
+  opts.on('-s', '--shade', 'Configure maven-shade-plugin to package in a uber-jar') {
     |v| options[:shade] = true }
   opts.on("-h", "--help", "Prints this help") do
     puts opts
