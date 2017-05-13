@@ -17,10 +17,20 @@ Aquest és un simple script que es limita a:
     - Fent servir maven-shade-plugin (per quan a més hi ha llibreries requerides)
 2. Configura el projecte perquè Maven faci servir Java8
 
-Funcionament
------------------
+Requirements
+------------------
+
 Cal tenir Ruby instal·lat perquè he desenvolupat l'script en Ruby (perquè en volia aprendre i no volia fer servir Python)
 
+Els requeriments només són dues llibreries. Cal instal·lar 'nokogiri' i 'optionparser': 
+
+    $ gem install nokogiri
+    $ gem install optionparser
+
+I ja es pot executar.
+
+Funcionament
+-----------------
 L'únic requeriment és definir on és el main amb *-m* o *--main-path*:
 
     $ ./mavenmainator.rb -m net.xaviersala.App
