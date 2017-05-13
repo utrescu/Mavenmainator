@@ -2,7 +2,7 @@ Mavenmainator
 ==========================
 En el temps que porto fent de professor de Java deixo que els alumnes facin servir el IDE que vulguin (Eclipse, IntelliJ IDEA, Netbeans, ...). Això era un problema a l'hora de corregir perquè he de crear projectes nous, cercar les llibreries, etc ... 
 
-Per aconseguir independència de l'IDE (quest motiu els demano que m'entreguin projectes en Maven (http://apache.maven.org)
+Per aconseguir independència de l'IDE (quest motiu els demano que m'entreguin projectes en Maven (http://maven.apache.org/)
 
 D'aquesta forma no necessito tenir el mateix IDE que ells i puc executar els programes fàcilment. El problema més gran d'aquest enfoc és que al fer programes curts cal definir la classe que té el main en el POM.XML.
 
