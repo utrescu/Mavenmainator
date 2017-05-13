@@ -4,18 +4,18 @@ En el temps que porto fent de professor de Java deixo que els alumnes facin serv
 
 Per aconseguir independència de l'IDE (quest motiu els demano que m'entreguin projectes en Maven (http://maven.apache.org/)
 
-D'aquesta forma no necessito tenir el mateix IDE que ells i puc executar els programes fàcilment. El problema més gran d'aquest enfoc és que al fer programes curts cal definir la classe que té el main en el POM.XML.
+D'aquesta forma no necessito tenir el mateix IDE que ells i puc executar els programes fàcilment. El problema més gran d'aquest enfoc és que com que bàsicament fem programes curts que s'executen directament cal definir la classe que té el main en el POM.XML.
 
-M'he trobat que a pesar de repetir-ho diverses vegades els alumnes sovint no defineixen el 'main' en el pom.xml
+M'he trobat que a pesar de repetir-ho diverses vegades els alumnes sovint no defineixen el 'main' en el pom.xml o bé el JAR generat no es pot executar perquè no conté totes les dependències
 
-A l'hora de corregir això m'obliga a editar el POM i posar-hi la configuració del main
+A l'hora de corregir això m'obliga a editar el POM i posar-hi la configuració que falta.
 
-Aquest és un simple script que es limita a:
+Aquest és un script que es limita a:
 
-1. configurar el POM.XML afegint-hi el main de dues formes:
-    - Fent servir maven-jar-plugin (per quan no calen llibreries externes)
-    - Fent servir maven-shade-plugin (per quan a més hi ha llibreries requerides)
-2. Configura el projecte perquè Maven faci servir Java8
+1. Configurar el POM.XML afegint-hi el main de dues formes:
+    - Fent servir maven-jar-plugin (per programes als que no els hi calen llibreries externes)
+    - Fent servir maven-shade-plugin (per programes que tenen llibreries entre les dependències). El shade empaqueta les dependències en el JAR.
+2. Configura el projecte perquè Maven faci servir Java8 (un altre dels problemes amb els que m'he trobat)
 
 Requirements
 ------------------
