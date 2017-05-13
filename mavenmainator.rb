@@ -198,6 +198,11 @@ SHADE = options[:shade]
 
 # 2. Processar el fitxer
 
+if !File.file?(INPOM)
+  puts "File " + INPOM + " doesn't exists"
+  exit(1)
+end
+
 @doc = File.open(INPOM) {|f| Nokogiri::XML(f, &:noblanks)}
 # doc = Nokogiri::XML(File.open("shows.xml"))
 # @doc.remove_namespaces!
